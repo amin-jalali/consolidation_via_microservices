@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  set_host_alias:
+    image: springload/set-alias-on-host
+    environment:
+      HOST_ALIAS: "sales.sub"
+    networks:
+      network:
+
+  sales:
+    build: .
+    image: sales
+    container_name: sales
+    ports:
+      - "5010:5010"
+    command: python subsystems/sales/app.py run -h 0.0.0.0
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - FLASK_DEBUG=1
+    networks:
+      network:
+        aliases:
+          - sales.sub
+
+  accounting:
+    build: .
+    image: accounting
+    container_name: accounting
+    ports:
+      - "5020:5020"
+    command: python subsystems/accounting/app.py run -h 0.0.0.0
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - FLASK_DEBUG=1
+    networks:
+      network:
+        aliases:
+          - accounting.sub
+
+  warehouse:
+    build: .
+    image: warehouse
+    container_name: warehouse
+    ports:
+      - "5030:5030"
+    command: python subsystems/warehouse/app.py run -h 0.0.0.0
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - FLASK_DEBUG=1
+    networks:
+      network:
+        aliases:
+          - warehouse.sub
+
+  api_gateway:
+    build: .
+    image: api_gateway
+    container_name: api_gateway
+    ports:
+      - "5000:5000"
+    command: python manage.py run -h 0.0.0.0 --reload
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - FLASK_DEBUG=1
+      - APP_SETTINGS=project.server.config.DevelopmentConfig
+    networks:
+      - network
+
+networks:
+  network:
+    name: network
