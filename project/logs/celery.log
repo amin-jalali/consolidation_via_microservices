@@ -30,3 +30,7 @@
 [2022-11-18 20:19:14,796: INFO/MainProcess] Task request[28af1d86-5c35-46c7-a542-25594ece165d] received
 [2022-11-18 20:19:14,797: WARNING/ForkPoolWorker-7] ('warehouse', 'get_status', 'GET')
 [2022-11-18 20:19:16,807: INFO/ForkPoolWorker-7] Task request[28af1d86-5c35-46c7-a542-25594ece165d] succeeded in 2.009825546000002s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
+[2022-11-18 20:47:56,618: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-11-18 20:47:56,621: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 20:47:57,629: INFO/MainProcess] mingle: all alone
+[2022-11-18 20:47:57,640: INFO/MainProcess] celery@13736b111fdc ready.
