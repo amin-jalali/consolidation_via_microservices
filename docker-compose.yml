@@ -68,6 +68,33 @@ services:
     environment:
       - FLASK_DEBUG=1
       - APP_SETTINGS=project.server.config.DevelopmentConfig
+    depends_on:
+      - redis
+    networks:
+      - network
+
+  celery_worker:
+    build: .
+    container_name: celery_worker
+    command: celery --app project.server.tasks.celery worker --loglevel=info --logfile=project/logs/celery.log
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - FLASK_DEBUG=1
+      - APP_SETTINGS=project.server.config.DevelopmentConfig
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    depends_on:
+      - api_gateway
+      - redis
+    networks:
+      - network
+
+  redis:
+    image: redis:6-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
     networks:
       - network
 
