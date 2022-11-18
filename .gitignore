@@ -5,3 +5,5 @@
 /subsystems/accounting/.idea/
 /subsystems/accounting/.venv/
 /.venv/
+/.gitignore/
+/.idea/
