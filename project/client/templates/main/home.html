@@ -25,25 +25,50 @@
         <div>
             <h3>Sales system</h3>
             <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary" onclick="clickHandler(1)">Sales GET (Pooling)</button>
+                <button type="button" class="btn btn-primary" onclick="clickHandler(2)">Sales POST (Pooling)</button>
                 <button type="button" class="btn btn-primary" onclick="clickHandler(3)">Sales Simple (Blocking)</button>
             </div>
         </div>
+        <hr>
         <div>
             <h3>Accounting system</h3>
             <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary" onclick="clickHandler(4)">Accounting GET (Pooling)</button>
+                <button type="button" class="btn btn-primary" onclick="clickHandler(5)">Accounting POST (Pooling)</button>
                 <button type="button" class="btn btn-primary" onclick="clickHandler(6)">Accounting Simple (Blocking)</button>
             </div>
         </div>
+        <hr>
         <div>
             <h3>Warehouse system</h3>
             <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary" onclick="clickHandler(7)">Warehouse GET (Pooling)</button>
+                <button type="button" class="btn btn-primary" onclick="clickHandler(8)">Warehouse POST (Pooling)</button>
                 <button type="button" class="btn btn-primary" onclick="clickHandler(9)">Warehouse Simple (Blocking)</button>
             </div>
         </div>
+        <hr>
         <br><br>
         <div>
             <h3>Blocking Task Result:</h3>
             <div id="blocking_task_result"></div>
+        </div>
+        <hr>
+        <div>
+            <h3>Pool Task Status</h3>
+            <br>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Status</th>
+                    <th>Result</th>
+                </tr>
+                </thead>
+                <tbody id="tasks">
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

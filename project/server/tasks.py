@@ -18,3 +18,13 @@ def request_handler(params):
 
     return result
 
+
+def get_task_status(task_id):
+    task_result = celery.AsyncResult(task_id)
+
+    result = {
+        "task_id": task_id,
+        "task_status": task_result.status,
+        "task_result": task_result.get() if task_result.status == 'SUCCESS' else ''
+    }
+    return result
