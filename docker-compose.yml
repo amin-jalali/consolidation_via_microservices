@@ -18,7 +18,7 @@ services:
     volumes:
       - .:/usr/src/app
     environment:
-      - FLASK_DEBUG=1
+      - FLASK_DEBUG=0
     networks:
       network:
         aliases:
@@ -34,7 +34,7 @@ services:
     volumes:
       - .:/usr/src/app
     environment:
-      - FLASK_DEBUG=1
+      - FLASK_DEBUG=0
     networks:
       network:
         aliases:
@@ -50,7 +50,7 @@ services:
     volumes:
       - .:/usr/src/app
     environment:
-      - FLASK_DEBUG=1
+      - FLASK_DEBUG=0
     networks:
       network:
         aliases:
@@ -65,7 +65,7 @@ services:
     volumes:
       - .:/usr/src/app
     environment:
-      - FLASK_DEBUG=1
+      - FLASK_DEBUG=0
       - APP_SETTINGS=project.server.config.DevelopmentConfig
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
@@ -93,7 +93,7 @@ services:
     volumes:
       - .:/usr/src/app
     environment:
-      - FLASK_DEBUG=1
+      - FLASK_DEBUG=0
       - APP_SETTINGS=project.server.config.DevelopmentConfig
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
@@ -110,7 +110,7 @@ services:
     ports:
       - "5555:5555"
     environment:
-      - FLASK_DEBUG=1
+      - FLASK_DEBUG=0
       - APP_SETTINGS=project.server.config.DevelopmentConfig
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
