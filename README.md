@@ -22,3 +22,9 @@ Creating celery_worker                                ... done
 
 Now you can simply open [http://localhost:5000](http://localhost:5000) 
 to view the web app consists of (GET) blocking response model and (GET, POST) Pooling request model
+
+
+## System unit & acceptance test
+```
+docker-compose exec api_gateway python -m pytest -vv
+```
