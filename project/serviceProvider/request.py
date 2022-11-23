@@ -39,5 +39,14 @@ class Request:
 
     def interact(self):
 
-        result = self.handler(self.route, params=self.payload)
-        return result.json()
+        try:
+            result = self.handler(self.route, params=self.payload)
+            return result.json() if result.status_code < 400 else result.status_code
+        except requests.exceptions.Timeout:
+            pass
+        except requests.exceptions.TooManyRedirects:
+            pass
+        except requests.exceptions.RequestException as e:
+            pass
+
+        return 500
