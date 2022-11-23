@@ -124,3 +124,17 @@
 [2022-11-23 07:32:40,181: INFO/MainProcess] Task request[c71371ee-7c17-492c-8303-26f94be428f5] received
 [2022-11-23 07:32:40,182: WARNING/ForkPoolWorker-7] ('<group>', '<service_name>', 'PUT')
 [2022-11-23 07:32:40,183: INFO/ForkPoolWorker-7] Task request[c71371ee-7c17-492c-8303-26f94be428f5] succeeded in 0.0010873459996219026s: '\'Route .../<group>/<service_name>/ With method PUT Does Not exist\''
+[2022-11-23 08:05:44,566: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-11-23 08:05:44,568: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-23 08:05:45,576: INFO/MainProcess] mingle: all alone
+[2022-11-23 08:05:45,586: INFO/MainProcess] celery@1bfeedd67789 ready.
+[2022-11-23 08:05:50,008: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-11-23 08:05:58,678: INFO/MainProcess] Task request[c9725af3-0bc6-449a-9e41-d53bc26cd1ac] received
+[2022-11-23 08:05:58,680: WARNING/ForkPoolWorker-7] ('sales', 'add_product', 'POST')
+[2022-11-23 08:06:00,695: INFO/ForkPoolWorker-7] Task request[c9725af3-0bc6-449a-9e41-d53bc26cd1ac] succeeded in 2.015039263998915s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
+[2022-11-23 08:06:38,076: INFO/MainProcess] Task request[68ee6c6d-b8ac-483f-aeda-123996ac53ea] received
+[2022-11-23 08:06:38,078: WARNING/ForkPoolWorker-7] ('sales', 'products', 'GET')
+[2022-11-23 08:06:39,915: INFO/MainProcess] Task request[f8085ee3-0846-4d41-8295-e9c05b26fcad] received
+[2022-11-23 08:06:39,917: WARNING/ForkPoolWorker-8] ('sales', 'products', 'GET')
+[2022-11-23 08:06:40,085: INFO/ForkPoolWorker-7] Task request[68ee6c6d-b8ac-483f-aeda-123996ac53ea] succeeded in 2.007274763998794s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
+[2022-11-23 08:06:41,927: INFO/ForkPoolWorker-8] Task request[f8085ee3-0846-4d41-8295-e9c05b26fcad] succeeded in 2.0104723450003803s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
