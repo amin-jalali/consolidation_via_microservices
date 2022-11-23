@@ -32,6 +32,10 @@ Just open [http://localhost:5555](http://localhost:5555)
 to view a web dashboard by the help of Flower(Celery monitoring tool)
 
 
+## API Documentation via Swagger
+open [http://localhost:5000/api/docs/](http://localhost:5000/api/docs/) 
+to view API documentations
+
 
 ## System unit & acceptance test
 ```
