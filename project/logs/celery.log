@@ -30,3 +30,37 @@
 [2022-11-18 20:19:14,796: INFO/MainProcess] Task request[28af1d86-5c35-46c7-a542-25594ece165d] received
 [2022-11-18 20:19:14,797: WARNING/ForkPoolWorker-7] ('warehouse', 'get_status', 'GET')
 [2022-11-18 20:19:16,807: INFO/ForkPoolWorker-7] Task request[28af1d86-5c35-46c7-a542-25594ece165d] succeeded in 2.009825546000002s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
+[2022-11-18 21:15:42,029: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-11-18 21:15:42,033: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 21:15:43,040: INFO/MainProcess] mingle: all alone
+[2022-11-18 21:15:43,049: INFO/MainProcess] celery@6a23965d6d65 ready.
+[2022-11-18 21:15:58,001: INFO/MainProcess] Task request[752916e8-f3bd-4739-8d4d-868e046faecf] received
+[2022-11-18 21:15:58,003: WARNING/ForkPoolWorker-7] ('sales', 'products', 'GET')
+[2022-11-18 21:16:00,022: INFO/ForkPoolWorker-7] Task request[752916e8-f3bd-4739-8d4d-868e046faecf] succeeded in 2.0184862140004043s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
+[2022-11-18 21:16:01,525: INFO/MainProcess] Task request[c843f401-9ac3-4b95-8484-e56a3cafacad] received
+[2022-11-18 21:16:01,526: WARNING/ForkPoolWorker-7] ('accounting', 'account_info', 'GET')
+[2022-11-18 21:16:03,534: INFO/ForkPoolWorker-7] Task request[c843f401-9ac3-4b95-8484-e56a3cafacad] succeeded in 2.0088247490002686s: [{'account_number': '124986323352', 'age': '27', 'name': 'Tomas'}]
+[2022-11-18 21:16:05,502: INFO/MainProcess] Task request[98908099-51d1-4020-bff6-e1406c7f2b23] received
+[2022-11-18 21:16:05,504: WARNING/ForkPoolWorker-7] ('warehouse', 'get_status', 'GET')
+[2022-11-18 21:16:07,512: INFO/ForkPoolWorker-7] Task request[98908099-51d1-4020-bff6-e1406c7f2b23] succeeded in 2.0083842889998778s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
+[2022-11-18 21:16:09,803: INFO/MainProcess] Task request[dd422d86-b45e-4f25-86fd-25394de7d246] received
+[2022-11-18 21:16:09,805: WARNING/ForkPoolWorker-7] ('sales', 'add_product', 'POST')
+[2022-11-18 21:16:11,814: INFO/ForkPoolWorker-7] Task request[dd422d86-b45e-4f25-86fd-25394de7d246] succeeded in 2.009303952000664s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
+[2022-11-18 21:16:12,550: INFO/MainProcess] Task request[c41cb86a-ca81-4426-9b63-7e8e4f26e6db] received
+[2022-11-18 21:16:12,551: WARNING/ForkPoolWorker-7] ('accounting', 'add_amount', 'POST')
+[2022-11-18 21:16:14,561: INFO/ForkPoolWorker-7] Task request[c41cb86a-ca81-4426-9b63-7e8e4f26e6db] succeeded in 2.009897794999233s: {'message': 'your account charged. charge: 1900$'}
+[2022-11-18 21:16:17,120: INFO/MainProcess] Task request[74c4a84e-533d-4e31-8649-a2dfcd5932b9] received
+[2022-11-18 21:16:17,122: WARNING/ForkPoolWorker-7] ('warehouse', 'save_log', 'POST')
+[2022-11-18 21:16:19,133: INFO/ForkPoolWorker-7] Task request[74c4a84e-533d-4e31-8649-a2dfcd5932b9] succeeded in 2.0111061070001597s: {'message': 'log saved, reference code: #$#HFAK=$@@#'}
+[2022-11-18 21:16:21,424: INFO/MainProcess] Task request[218cd46f-f03b-4a0b-8499-ebeeb7258db8] received
+[2022-11-18 21:16:21,425: WARNING/ForkPoolWorker-7] ('sales', 'add_product', 'POST')
+[2022-11-18 21:16:23,434: INFO/ForkPoolWorker-7] Task request[218cd46f-f03b-4a0b-8499-ebeeb7258db8] succeeded in 2.0093541840005855s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
+[2022-11-18 21:16:26,661: INFO/MainProcess] Task request[9573d7db-fc0b-42f2-b601-1fd56048f618] received
+[2022-11-18 21:16:26,662: WARNING/ForkPoolWorker-7] ('sales', 'products', 'GET')
+[2022-11-18 21:16:28,670: INFO/ForkPoolWorker-7] Task request[9573d7db-fc0b-42f2-b601-1fd56048f618] succeeded in 2.0079640929998277s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
+[2022-11-18 21:16:30,646: INFO/MainProcess] Task request[e1960870-f9bf-45f3-8e35-520daece97e5] received
+[2022-11-18 21:16:30,647: WARNING/ForkPoolWorker-7] ('accounting', 'account_info', 'GET')
+[2022-11-18 21:16:32,654: INFO/ForkPoolWorker-7] Task request[e1960870-f9bf-45f3-8e35-520daece97e5] succeeded in 2.007178617000136s: [{'account_number': '124986323352', 'age': '27', 'name': 'Tomas'}]
+[2022-11-18 21:16:34,662: INFO/MainProcess] Task request[deb0ebe0-eca2-4288-b67a-09f9cbfa4884] received
+[2022-11-18 21:16:34,663: WARNING/ForkPoolWorker-7] ('warehouse', 'get_status', 'GET')
+[2022-11-18 21:16:36,670: INFO/ForkPoolWorker-7] Task request[deb0ebe0-eca2-4288-b67a-09f9cbfa4884] succeeded in 2.006836781999482s: [{'name': 'iphone', 'price': '200'}, {'name': 'samsung', 'price': '180'}]
