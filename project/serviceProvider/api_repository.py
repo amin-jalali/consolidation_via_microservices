@@ -6,6 +6,10 @@ apis = {
     "sales": {
         "base_url": "http://sales.sub:5010",
         "routes": {
+            "docs": {
+                "custom_url": "",
+                "methods": ["GET"]
+            },
             "products": {
                 "custom_url": "",
                 "methods": ["GET", "POST"]
@@ -19,6 +23,10 @@ apis = {
     "accounting": {
         "base_url": "http://accounting.sub:5020",
         "routes": {
+            "docs": {
+                "custom_url": "",
+                "methods": ["GET"]
+            },
             "account_info": {
                 "custom_url": "",
                 "methods": ["GET"]
@@ -32,6 +40,10 @@ apis = {
     "warehouse": {
         "base_url": "http://warehouse.sub:5030",
         "routes": {
+            "docs": {
+                "custom_url": "",
+                "methods": ["GET"]
+            },
             "get_status": {
                 "custom_url": "",
                 "methods": ["GET"]
