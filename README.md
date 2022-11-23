@@ -21,13 +21,10 @@ Creating celery_worker                                ... done
 ```
 
 Now you can simply open [http://localhost:5000](http://localhost:5000) 
-to view the web app consists of (GET) blocking response model
+to view the web app consists of (GET) blocking response model and (GET, POST) Pooling request model
 
-</br></br>
 
-Also, you can run a new task by curl as below or any other tool. 
-
-```sh
-$ curl http://localhost:5000/request/sales/products -H "Content-Type: application/json" --data '{"type": 0}'
+## System unit & acceptance test
 ```
-
+docker-compose exec api_gateway python -m pytest -vv
+```

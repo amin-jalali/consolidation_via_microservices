@@ -6,7 +6,7 @@ services:
     environment:
       HOST_ALIAS: "sales.sub"
     networks:
-      network:
+      - network
 
   sales:
     build: .
